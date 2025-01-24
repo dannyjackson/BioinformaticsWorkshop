@@ -17,8 +17,6 @@ cd Intro_Bioinformatics_Workshop
 
 ls
 
-chmod +x fst.sh
-
 cd ~/IntroBioinformaticsWorkshop/datafiles/safs
 cp ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/datafiles/* .
 

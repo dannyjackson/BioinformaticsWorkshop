@@ -44,11 +44,11 @@ cd ${OUTDIR}/analyses/fst/${WIN}
 ~/IntroBioinformaticsWorkshop/programs/angsd/misc/realSFS fst stats2 ${OUTDIR}/analyses/fst/pyrr.fst.idx  -win ${WIN} -step ${STEP} > ${OUTDIR}/analyses/fst/${WIN}/slidingwindow_pyrr
 
 # windowed
-echo -e 'region\tchr\tmidPos\tNsites\tfst' > ${OUTDIR}/analyses/fst/slidingwindow_fst_pyrr.txt
+echo -e 'region\tchr\tmidPos\tNsites\tfst' > ${OUTDIR}/analyses/fst/${WIN}/slidingwindow_fst_pyrr.txt
 #tail -n+2 slidingwindow >> slidingwindow_fst.txt 
-grep 'NC_' ${OUTDIR}/analyses/fst/slidingwindow_pyrr >> ${OUTDIR}/analyses/fst/slidingwindow_fst_pyrr.txt
-sed -i 's/NC_//g' ${OUTDIR}/analyses/fst/slidingwindow_fst_pyrr.txt 
-sed -i 's/\.1\t/\t/g' ${OUTDIR}/analyses/fst/slidingwindow_fst_pyrr.txt
+grep 'NC_' ${OUTDIR}/analyses/fst/${WIN}/slidingwindow_pyrr >> ${OUTDIR}/analyses/fst/${WIN}/slidingwindow_fst_pyrr.txt
+sed -i 's/NC_//g' ${OUTDIR}/analyses/fst/${WIN}/slidingwindow_fst_pyrr.txt 
+sed -i 's/\.1\t/\t/g' ${OUTDIR}/analyses/fst/${WIN}/slidingwindow_fst_pyrr.txt
 
 Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_window.r ${OUTDIR} ${WIN}
 
@@ -75,7 +75,7 @@ Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_snps.r ${OUTDIR} ${
 
 # make relevant gene lists
 
-awk 'BEGIN {FS = ","} {$1=""}1' ${OUTDIR}/pyrr.windowed.outlierfst.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > pyrr.windowed.outlierfst.csv.tmp
+awk 'BEGIN {FS = ","} {$1=""}1' ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > pyrr.outlierfst.csv.tmp
 
 mv pyrr.windowed.outlierfst.csvv.tmp pyrr.windowed.outlierfst.csv
 
@@ -86,3 +86,6 @@ mv outlierdxy_pyrr.csv.tmp outlierdxy_pyrr_windows.csv
 sed -i 's/\"//g' outlierdxy_noca_windows.csv
 sed -i 's/\"//g' outlierdxy_pyrr_windows.csv
 
+
+# troubleshooting 
+awk 'BEGIN {FS = ","} {$1=""}1' pyrr.outlierfst.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > pyrr.outlierfst.csv.tmp

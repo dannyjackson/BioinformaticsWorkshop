@@ -1,17 +1,23 @@
 #!/usr/bin/env Rscript
-
+# OUTDIR = "/home/u15/dannyjackson/IntroBioinformaticsWorkshop/"
+# WIN = 1000
 args = commandArgs(trailingOnly=TRUE)
 OUTDIR = args[1]
 WIN = args[2]
 
-library(qqman)
-library(readr)
-library(ggrepel)
-library(ggplot2)
-library(dplyr)
-library(RColorBrewer)
+# Package names
+packages <- c("qqman", "readr", "ggrepel", "ggplot2", "dplyr", "RColorBrewer")
 
-fst <- read.csv(file.path(OUTDIR, "analyses/fst/slidingwindow_fst_pyrr.txt"), sep ='\t')
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Packages loading
+invisible(lapply(packages, library, character.only = TRUE))
+
+fst <- read.csv(file.path(OUTDIR, "analyses/fst", WIN, "slidingwindow_fst_pyrr.txt"), sep ='\t')
 fst_noNA <- na.omit(fst)
 nrow(fst) - nrow(fst_noNA) # print
 fst = fst_noNA
