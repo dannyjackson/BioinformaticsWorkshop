@@ -4,9 +4,6 @@ args = commandArgs(trailingOnly=TRUE)
 OUTDIR = args[1]
 WIN = args[2]
 
-OUTDIR="~/IntroBioinformaticsWorkshop" # main directory for output files
-WIN = 50000
-
 library(qqman)
 library(readr)
 library(ggrepel)
