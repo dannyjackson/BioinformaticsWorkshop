@@ -52,3 +52,47 @@ cat(c("FST cutoff:",FSTcutoff),file="FST_stats.txt", sep="\n", append=TRUE)
 outlier_fst_disorder2 <- subset(outlier_fst_disorder, select = -c(region))
 
 write.csv(outlier_fst_disorder2, file.path(OUTDIR, "analyses/fst", WIN, "pyrr.outlierfst.csv"))
+
+
+
+# draw it with cutoff line 
+
+blues <- "#082B64"
+
+middlechr = (max(fst$midPos) + as.numeric(WIN)/2)/2
+
+png(file = file.path(OUTDIR,"analyses/fst/pyrr.fst.snps.sigline.png"), width = 2000, height =500)
+
+ggplot(fst, aes(x=midPos, y=(fst))) +
+  # Show all points
+  geom_point(aes(color=as.factor(chr)), alpha=0.8, size=.5) +
+  scale_color_manual(values = blues) +
+
+  # custom X axis:
+  scale_y_continuous(expand = c(0, 0), limits = c(0,1)) + # expand=c(0,0)removes space between plot area and x axis 
+  
+  # add plot and axis titles
+  ggtitle(NULL) +
+  labs(x = "Chromosome", y = "fst") +
+  
+  # add genome-wide sig and sugg lines
+  geom_hline(yintercept = FSTcutoff) +
+  
+  # Add highlighted points
+  #geom_point(data=subset(df.tmp, is_highlight=="yes"), color="orange", size=2) +
+  
+  # Add label using ggrepel to avoid overlapping
+  geom_label_repel(data=fst[fst$is_annotate=="yes",], aes(label=as.factor(midPos), alpha=0.7), size=5, force=1.3) +
+  
+  # Custom the theme:
+  theme_bw(base_size = 22) +
+  theme( 
+    plot.title = element_text(hjust = 0.5),
+    legend.position="none",
+    panel.border = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank()
+  )
+
+
+dev.off()
