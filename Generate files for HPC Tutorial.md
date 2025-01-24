@@ -10,3 +10,10 @@ cd /xdisk/mcnew/dannyjackson/IntroBioinformaticsWorkshop
 ~/programs/angsd/angsd -bam /xdisk/mcnew/dannyjackson/cardinals_dfinch/referencelists/pyrrurbanbams.txt -out pyrr_urban -dosaf 1 -GL 1 -doGlf 2 -doMaf 1 -doMajorMinor 3 -doCounts 1 -doDepth 1 -setMinDepthInd 4 -minInd 2 -minQ 30 -minMapQ 30 -sites /xdisk/mcnew/dannyjackson/cardinals_dfinch/referencelists/sites_headless.mafs -anc /xdisk/mcnew/finches/dannyjackson/finch_wgs/fastqs/GCF_901933205.fa -nThreads 10 -r NC_044582.1
 
 ~/programs/angsd/angsd -bam /xdisk/mcnew/dannyjackson/cardinals_dfinch/referencelists/pyrrruralbams_subset.txt -out pyrr_rural -dosaf 1 -GL 1 -doGlf 2 -doMaf 1 -doMajorMinor 3 -doCounts 1 -doDepth 1 -setMinDepthInd 4 -minInd 2 -minQ 30 -minMapQ 30 -sites /xdisk/mcnew/dannyjackson/cardinals_dfinch/referencelists/sites_headless.mafs -anc /xdisk/mcnew/finches/dannyjackson/finch_wgs/fastqs/GCF_901933205.fa -nThreads 10 -r NC_044582.1
+
+git clone https://github.com/dannyjackson/Intro_Bioinformatics_Workshop
+cd Intro_Bioinformatics_Workshop/
+mkdir datafiles
+cd datafiles
+
+cp /xdisk/mcnew/dannyjackson/IntroBioinformaticsWorkshop/*saf* .

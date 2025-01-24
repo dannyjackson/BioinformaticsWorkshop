@@ -25,7 +25,7 @@ fi
 #this is with 2pops
 #first calculate per pop saf for each population (done above)
 #calculate the 2dsfs prior
-cd ${OUTDIR}/analyses/fst
+cd ${OUTDIR}/analyses/fst/${WIN}
 ~/IntroBioinformaticsWorkshop/programs/angsd/misc/realSFS ${OUTDIR}/datafiles/safs/noca_urban.saf.idx ${OUTDIR}/datafiles/safs/noca_rural.saf.idx > ${OUTDIR}/datafiles/mls/noca.pre.post.ml
 ~/IntroBioinformaticsWorkshop/programs/angsd/misc/realSFS ${OUTDIR}/datafiles/safs/pyrr_urban.saf.idx ${OUTDIR}/datafiles/safs/pyrr_rural.saf.idx> ${OUTDIR}/datafiles/mls/pyrr.pre.post.ml
 

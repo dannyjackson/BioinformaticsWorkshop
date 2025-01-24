@@ -1,14 +1,15 @@
 # HPC Tutorial
 
 ssh dannyjackson@hpc.arizona.edu
+
 shell
 pwd
-mkdir IntroBioinformaticsWorkshop
+mkdir -p IntroBioinformaticsWorkshop
 cd IntroBioinformaticsWorkshop
 ls
-mkdir analyses datafiles scripts referencelists programs
+mkdir -p analyses datafiles scripts referencelists programs
 cd programs
-git clone github.com/jacksondanny/Intro_Bioinformatics_Workshop
+git clone https://github.com/dannyjackson/Intro_Bioinformatics_Workshop
 
 cd Intro_Bioinformatics_Workshop
 
@@ -16,9 +17,14 @@ ls
 
 chmod +x fst.sh
 
+cd ~/IntroBioinformaticsWorkshop/datafiles/safs
+cp ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/datafiles/* .
+
 elgato
 interactive -a mcnew
 OR 
 interactive -a laurenpetrullo
 OR 
 interactive
+
+~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/fst.sh
