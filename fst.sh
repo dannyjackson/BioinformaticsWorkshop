@@ -4,8 +4,7 @@
 
 # all parameters come from the fst_param control file
 # make edits there before using this script!
-
-scriptdir=~/programs/Intro_Bioinformatics_Workshop
+scriptdir=~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop
 source ${scriptdir}/fst_params.sh
 
 printf "\n \n \n \n"
