@@ -77,7 +77,44 @@ Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_snps.r ${OUTDIR} ${
 
 awk 'BEGIN {FS = ","} {$1=""}1' ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv.tmp
 
-mv ${OUTDIR}/analyses/fst/pyrr.windowed.outlierfst.csv.tmp ${OUTDIR}/analyses/fst/pyrr.windowed.outlierfst.csv
+mv ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv.tmp ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv
 
-sed -i 's/\"//g' ${OUTDIR}/analyses/fst/pyrr.windowed.outlierfst.csv
+sed -i 's/\"//g' ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv
 
+
+# windowed
+
+while read -r line;
+do
+
+chr=`awk 'BEGIN {FS = "\t"} {print $2}' <<<"${line}"`
+midpos=`awk 'BEGIN {FS = "\t"} {print $3}' <<<"${line}"`
+
+grep "$chr" /xdisk/mcnew/dannyjackson/cardinals_dfinch/datafiles/referencegenome/ncbi_dataset/data/GCF_901933205.1/genomic.gff | grep 'ID=gene' | awk '{OFS = "\t"} ($4 < '$midpos' && $5 > '$midpos')' >> ${OUTDIR}/analyses/genelist/relevantgenes_snps_top.95.txt
+
+awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[1])}' ${OUTDIR}/analyses/genelist/relevantgenes_snps_top.95.txt | sed 's/ID\=gene\-//g' | sort -u > ${OUTDIR}/analyses/genelist/relevantgenenames_snps_top.95.txt
+
+done < snps_top.95.txt
+
+
+
+awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[2])}' ${OUTDIR}/analyses/genelist/relevantgenes_pyrr_snps_fst.txt | sed 's/Name\=//g' | sort -u > ${OUTDIR}/analyses/genelist/relevantgenenames_pyrr_snps_fst.txt
+
+
+
+# windowed
+while read -r line;
+do
+
+chr=`awk 'BEGIN {FS = ","} {print "NC_"$1".1"}' <<<"${line}"`
+midpos=`awk 'BEGIN {FS = ","} {print $2}' <<<"${line}"`
+minpos=$((midpos - (WIN/2)))
+maxpos=$((midpos + (WIN/2)))
+
+
+grep "$chr" /xdisk/mcnew/dannyjackson/cardinals_dfinch/datafiles/referencegenome/ncbi_dataset/data/GCF_901933205.1/genomic.gff | grep 'ID=gene' | awk '{OFS = "\t"} ($4 < '$maxpos' && $5 > '$minpos' || $5 < '$maxpos' && $5 > '$minpos' || $4 < '$minpos' && $5 > '$minpos' || $4 < '$maxpos' && $5 > '$maxpos')' >> ${OUTDIR}/analyses/genelist/relevantgenes_pyrr_windowed_fst.txt
+
+done < ${OUTDIR}/analyses/fst/pyrr.outlierfst.windowed.csv
+
+
+awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[2])}' ${OUTDIR}/analyses/genelist/relevantgenes_pyrr_windowed_fst.txt | sed 's/Name\=//g' | sort -u > ${OUTDIR}/analyses/genelist/relevantgenenames_pyrr_windowed_fst.txt
