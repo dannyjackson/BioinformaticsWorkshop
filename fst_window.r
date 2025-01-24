@@ -52,17 +52,11 @@ outlier_fst_disorder2 <- subset(outlier_fst_disorder, select = -c(region))
 write.csv(outlier_fst_disorder2, file.path(OUTDIR, "analyses/fst", WIN, "pyrr.windowed.outlierfst.csv"))
 
 
-
-
-pdf(file = file.path(OUTDIR,"analyses/fst", WIN, "manhattan_windowed_pyrr_logp.pdf"), width = 20, height =7, useDingbats=FALSE)
-manhattan(fst, chr="chr", bp="Nsites", snp="midPos", p="neg_log_pvalues_one_tailed", logp=FALSE, ylab = "-log(p-value)", cex = 0.5)
-dev.off()
-
 # draw it with cutoff line 
 
 blues <- "#082B64"
 
-middlechr = (max(fst$midPos) + WIN/2)/2
+middlechr = (max(fst$midPos) + as.numeric(WIN)/2)/2
 
 png(file = file.path(OUTDIR,"analyses/fst", WIN, "pyrr.fst.windowed.sigline.png"), width = 2000, height =500)
 
@@ -99,10 +93,4 @@ ggplot(fst, aes(x=midPos, y=(fst))) +
   )
 
 
-dev.off()
-
-
-
-pdf(file = file.path(OUTDIR,"analyses/fst", WIN, "manhattan_windowed_pyrr.pdf"), width = 20, height =7, useDingbats=FALSE)
-manhattan(fst, chr="chr", bp="Nsites", snp="midPos", p="fst", logp=FALSE, ylab = "FST", cex = 0.5)
 dev.off()
