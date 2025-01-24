@@ -44,11 +44,11 @@ cd ${OUTDIR}/analyses/fst/${WIN}
 ~/IntroBioinformaticsWorkshop/programs/angsd/misc/realSFS fst stats2 ${OUTDIR}/analyses/fst/pyrr.fst.idx  -win ${WIN} -step ${STEP} > ${OUTDIR}/analyses/fst/${WIN}/slidingwindow_pyrr
 
 # windowed
-echo -e 'region\tchr\tmidPos\tNsites\tfst' > slidingwindow_fst_pyrr.txt
+echo -e 'region\tchr\tmidPos\tNsites\tfst' > ${OUTDIR}/analyses/fst/slidingwindow_fst_pyrr.txt
 #tail -n+2 slidingwindow >> slidingwindow_fst.txt 
-grep 'NC_' slidingwindow_pyrr >> slidingwindow_fst_pyrr.txt
-sed -i 's/NC_//g' slidingwindow_fst_pyrr.txt 
-sed -i 's/\.1\t/\t/g' slidingwindow_fst_pyrr.txt
+grep 'NC_' ${OUTDIR}/analyses/fst/slidingwindow_pyrr >> ${OUTDIR}/analyses/fst/slidingwindow_fst_pyrr.txt
+sed -i 's/NC_//g' ${OUTDIR}/analyses/fst/slidingwindow_fst_pyrr.txt 
+sed -i 's/\.1\t/\t/g' ${OUTDIR}/analyses/fst/slidingwindow_fst_pyrr.txt
 
 Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_window.r ${OUTDIR} ${WIN}
 
@@ -60,9 +60,10 @@ Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_window.r ${OUTDIR} 
 ~/IntroBioinformaticsWorkshop/programs/angsd/misc/realSFS fst stats2 pyrr.fst.idx -win 1 -step 1 >${OUTDIR}/analyses/fst/singlesnps_pyrr
 
 # single snps
-echo -e 'region\tchr\tmidPos\tNsites\tfst' > slidingwindow_singlesnps_fst_pyrr.txt
+echo -e 'region\tchr\tmidPos\tNsites\tfst' > ${OUTDIR}/analyses/fst/singlesnps_fst_pyrr.txt
 #tail -n+2 slidingwindow >> slidingwindow_fst.txt 
-grep 'NC_' slidingwindow_singlesnps_pyrr >> slidingwindow_singlesnps_fst_pyrr.txt
-sed -i 's/NC_//g' slidingwindow_singlesnps_fst_pyrr.txt 
-sed -i 's/\.1\t/\t/g' slidingwindow_singlesnps_fst_pyrr.txt
+grep 'NC_' ${OUTDIR}/analyses/fst/slidingwindow_singlesnps_pyrr >> ${OUTDIR}/analyses/fst/singlesnps_fst_pyrr.txt
+sed -i 's/NC_//g' ${OUTDIR}/analyses/fst/singlesnps_fst_pyrr.txt 
+sed -i 's/\.1\t/\t/g' ${OUTDIR}/analyses/fst/singlesnps_fst_pyrr.txt
+
 Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_snps.r ${OUTDIR} ${WIN}

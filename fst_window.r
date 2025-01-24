@@ -11,7 +11,7 @@ library(ggplot2)
 library(dplyr)
 library(RColorBrewer)
 
-fst <- read.csv(file.path(OUTDIR, "analyses/fst", WIN, "slidingwindow_fst_pyrr.txt"), sep ='\t')
+fst <- read.csv(file.path(OUTDIR, "analyses/fst/slidingwindow_fst_pyrr.txt"), sep ='\t')
 fst_noNA <- na.omit(fst)
 nrow(fst) - nrow(fst_noNA) # print
 fst = fst_noNA

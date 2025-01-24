@@ -9,7 +9,8 @@ library(ggplot2)
 library(dplyr)
 library(RColorBrewer)
 
-fst <- read.csv(file.path(OUTDIR, "analyses/fst", WIN, "slidingwindow_singlesnps_fst_pyrr.txt"), sep ='\t')
+
+fst <- read.csv(file.path(OUTDIR, "analyses/fst/singlesnps_fst_pyrr.txt"), sep ='\t')
 
 fst_noNA <- na.omit(fst)
 nrow(fst) - nrow(fst_noNA)
@@ -18,8 +19,6 @@ minFST = min(fst$fst)
 maxFST = max(fst$fst) # print to file
 cat(c("Min FST cutoff:",minFST),file="FST_stats.txt", sep="\n", append=TRUE)
 cat(c("Max FST cutoff:",maxFST),file="FST_stats.txt", sep="\n", append=TRUE)
-
-0.988323
 
 # z transform fst values
 
