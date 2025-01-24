@@ -26,5 +26,11 @@ OR
 interactive -a laurenpetrullo
 OR 
 interactive
+cd ~/IntroBioinformaticsWorkshop/analyses/fst
+ls
 
+chmod +x ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/fst.sh
 ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/fst.sh
+
+chmod -x ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/fst.sh
+git pull ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/fst.sh
