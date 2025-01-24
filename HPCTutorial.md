@@ -46,4 +46,3 @@ cd ~/IntroBioinformaticsWorkshop/analyses/fst
 chmod +x ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/fst.sh
 ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/fst.sh
 
-Rscript ~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop/fst_window.r ~/IntroBioinformaticsWorkshop/ 1000

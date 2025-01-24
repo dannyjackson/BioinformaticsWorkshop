@@ -96,7 +96,7 @@ grep "$chr" /xdisk/mcnew/dannyjackson/cardinals_dfinch/datafiles/referencegenome
 
 awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[1])}' ../genelist/relevantgenes_snps_top.95.txt | sed 's/ID\=gene\-//g' | sort -u > ../genelist/relevantgenenames_snps_top.95.txt
 
-done < pyrr.outlierfst.headless.csv
+done < ${OUTDIR}/analyses/fst/pyrr.outlierfst.headless.csv
 
 
 
