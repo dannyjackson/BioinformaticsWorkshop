@@ -66,7 +66,7 @@ ggplot(fst, aes(x=midPos, y=(fst))) +
   scale_color_manual(values = blues) +
 
   # custom X axis:
-  scale_x_continuous( label = 12, breaks= middlechr, guide = guide_axis(n.dodge = 2) ) +
+  scale_x_continuous( label = fst$midPos, breaks= 30, guide = guide_axis(n.dodge = 2) ) +
   scale_y_continuous(expand = c(0, 0), limits = c(0,1)) + # expand=c(0,0)removes space between plot area and x axis 
   
   # add plot and axis titles
