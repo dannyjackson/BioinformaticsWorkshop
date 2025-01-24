@@ -82,23 +82,21 @@ mv ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv.tmp ${OUTDIR}/analyses/fst/pyrr.ou
 sed -i 's/\"//g' ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv
 
 
-# windowed
+# snps troubleshooting
+tail -n +2 pyrr.outlierfst.csv  > pyrr.outlierfst.headless.csv
 
 while read -r line;
 do
 
-chr=`awk 'BEGIN {FS = "\t"} {print $2}' <<<"${line}"`
-midpos=`awk 'BEGIN {FS = "\t"} {print $3}' <<<"${line}"`
+chr=`awk 'BEGIN {FS = ","} {print "NC_0"$1".1"}' <<<"${line}"`
+midpos=`awk 'BEGIN {FS = ","} {print $2}' <<<"${line}"`
 
-grep "$chr" /xdisk/mcnew/dannyjackson/cardinals_dfinch/datafiles/referencegenome/ncbi_dataset/data/GCF_901933205.1/genomic.gff | grep 'ID=gene' | awk '{OFS = "\t"} ($4 < '$midpos' && $5 > '$midpos')' >> ${OUTDIR}/analyses/genelist/relevantgenes_snps_top.95.txt
+echo $midpos
+grep "$chr" /xdisk/mcnew/dannyjackson/cardinals_dfinch/datafiles/referencegenome/ncbi_dataset/data/GCF_901933205.1/genomic.gff | grep 'ID=gene' | awk '{OFS = "\t"} ($4 < $midpos && $5 > $midpos)' >> ../genelist/relevantgenes_snps_top.95.txt
 
-awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[1])}' ${OUTDIR}/analyses/genelist/relevantgenes_snps_top.95.txt | sed 's/ID\=gene\-//g' | sort -u > ${OUTDIR}/analyses/genelist/relevantgenenames_snps_top.95.txt
+awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[1])}' ../genelist/relevantgenes_snps_top.95.txt | sed 's/ID\=gene\-//g' | sort -u > ../genelist/relevantgenenames_snps_top.95.txt
 
-done < snps_top.95.txt
-
-
-
-awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[2])}' ${OUTDIR}/analyses/genelist/relevantgenes_pyrr_snps_fst.txt | sed 's/Name\=//g' | sort -u > ${OUTDIR}/analyses/genelist/relevantgenenames_pyrr_snps_fst.txt
+done < pyrr.outlierfst.headless.csv
 
 
 

@@ -42,9 +42,9 @@ ordered_fst <- fst %>%
  arrange(desc(neg_log_pvalues_one_tailed)) 
 
 nsnps = nrow(ordered_fst)
-onep_snps = round(nsnps*0.001)
+top_snps = round(nsnps*0.05)
 
-outlier_fst_disorder <- ordered_fst[1:onep_snps,]
+outlier_fst_disorder <- ordered_fst[1:top_snps,]
 
 outlier_fst <- outlier_fst_disorder %>% arrange(chr, midPos)
 
