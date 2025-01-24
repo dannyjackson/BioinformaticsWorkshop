@@ -50,7 +50,7 @@ grep 'NC_' slidingwindow_pyrr >> slidingwindow_fst_pyrr.txt
 sed -i 's/NC_//g' slidingwindow_fst_pyrr.txt 
 sed -i 's/\.1\t/\t/g' slidingwindow_fst_pyrr.txt
 
-Rscript fst_window.r ${OUTDIR} ${WIN}
+Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_window.r ${OUTDIR} ${WIN}
 
 
 # should do an "if this doesn't exist, do it" sort of thing here
@@ -65,4 +65,4 @@ echo -e 'region\tchr\tmidPos\tNsites\tfst' > slidingwindow_singlesnps_fst_pyrr.t
 grep 'NC_' slidingwindow_singlesnps_pyrr >> slidingwindow_singlesnps_fst_pyrr.txt
 sed -i 's/NC_//g' slidingwindow_singlesnps_fst_pyrr.txt 
 sed -i 's/\.1\t/\t/g' slidingwindow_singlesnps_fst_pyrr.txt
-Rscript fst_snps.r ${OUTDIR} ${WIN}
+Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_snps.r ${OUTDIR} ${WIN}
