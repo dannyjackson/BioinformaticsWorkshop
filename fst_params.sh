@@ -14,7 +14,7 @@ mkdir -p ${OUTDIR}/datafiles/safs
 mkdir -p ${OUTDIR}/datafiles/mls/
 
 # for fst.sh
-WIN=10000 # size of window for fst scans
-STEP=10000 # size of step for fst scans
+WIN=1000 # size of window for fst scans
+STEP=1000 # size of step for fst scans
 mkdir -p ${OUTDIR}/analyses/fst/${WIN}
 mkdir -p ${OUTDIR}/analyses/genelist/${WIN}
