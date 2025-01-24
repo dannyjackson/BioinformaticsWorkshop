@@ -83,7 +83,7 @@ sed -i 's/\"//g' ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv
 
 
 # snps troubleshooting
-tail -n +2 pyrr.outlierfst.csv  > pyrr.outlierfst.headless.csv
+tail -n +2 ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv  > ${OUTDIR}/analyses/fst/pyrr.outlierfst.headless.csv
 
 while read -r line;
 do
