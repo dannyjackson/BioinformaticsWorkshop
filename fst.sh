@@ -105,8 +105,8 @@ sed -i 's/\"//g' ${OUTDIR}/analyses/fst/${WIN}/pyrr.windowed.outlierfst.csv
 tail -n +2 ${OUTDIR}/analyses/fst/${WIN}/pyrr.windowed.outlierfst.csv > ${OUTDIR}/analyses/fst/${WIN}/pyrr.windowed.outlierfst.headless.csv
 
 
-awk -F',' 'NR>1 {print "NC_0"$1".1" "\t" $2-1 "\t" $2}' ${OUTDIR}/analyses/fst/${WIN}/pyrr.windowed.outlierfst.headless.csv > ${OUTDIR}/analyses/fst/${WIN}/pyrr.outlierfst.bed
+awk -F',' -v win="$WIN" 'NR>1 {print "NC_0"$1".1" "\t" $2-(win/2) "\t" $2+(win/2)}' ${OUTDIR}/analyses/fst/${WIN}/pyrr.windowed.outlierfst.headless.csv > ${OUTDIR}/analyses/fst/${WIN}/pyrr.outlierfst.bed
 
-bedtools intersect -a /xdisk/mcnew/dannyjackson/cardinals_dfinch/datafiles/referencegenome/ncbi_dataset/data/GCF_901933205.1/genomic.gff -b ${OUTDIR}/analyses/fst/${WIN}/pyrr.outlierfst.bed -wa > ${OUTDIR}/analyses/genelist/relevantgenes_snps_top.95.txt
+bedtools intersect -a /xdisk/mcnew/dannyjackson/cardinals_dfinch/datafiles/referencegenome/ncbi_dataset/data/GCF_901933205.1/genomic.gff -b ${OUTDIR}/analyses/fst/${WIN}/pyrr.outlierfst.bed -wa > ${OUTDIR}/analyses/genelist/relevantgenes_windowed_top.95.txt
 
-awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[1])}' ${OUTDIR}/analyses/genelist/relevantgenes_snps_top.95.txt | sed 's/ID\=gene\-//g' | sort -u > ${OUTDIR}/analyses/genelist/relevantgenenames_snps_top.95.txt
+awk '{OFS = "\t"} {split($9, arr, ";"); print(arr[1])}' ${OUTDIR}/analyses/genelist/relevantgenes_windowed_top.95.txt | sed 's/ID\=gene\-//g' | sort -u > ${OUTDIR}/analyses/genelist/relevantgenenames_snps_top.95.txt
