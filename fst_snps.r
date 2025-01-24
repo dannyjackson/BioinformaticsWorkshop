@@ -1,4 +1,7 @@
 args = commandArgs(trailingOnly=TRUE)
+OUTDIR ="~/IntroBioinformaticsWorkshop"
+WIN = 1000
+
 OUTDIR = args[1]
 WIN = args[2]
 
@@ -50,7 +53,7 @@ cat(c("FST cutoff:",FSTcutoff),file="FST_stats.txt", sep="\n", append=TRUE)
 
 outlier_fst_disorder2 <- subset(outlier_fst_disorder, select = -c(region))
 
-write.csv(outlier_fst_disorder2, file.path(OUTDIR, "analyses/fst", WIN, "pyrr.outlierfst.csv"))
+write.csv(outlier_fst_disorder2, file.path(OUTDIR, "analyses/fst/pyrr.outlierfst.csv"))
 
 
 

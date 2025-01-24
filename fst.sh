@@ -67,3 +67,22 @@ sed -i 's/NC_//g' ${OUTDIR}/analyses/fst/singlesnps_fst_pyrr.txt
 sed -i 's/\.1\t/\t/g' ${OUTDIR}/analyses/fst/singlesnps_fst_pyrr.txt
 
 Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_snps.r ${OUTDIR} ${WIN}
+
+
+
+
+
+
+# make relevant gene lists
+
+awk 'BEGIN {FS = ","} {$1=""}1' ${OUTDIR}/pyrr.windowed.outlierfst.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > pyrr.windowed.outlierfst.csv.tmp
+
+mv pyrr.windowed.outlierfst.csvv.tmp pyrr.windowed.outlierfst.csv
+
+awk 'BEGIN {FS = ","} {$1=""}1' outlierdxy_pyrr_windows.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > outlierdxy_pyrr.csv.tmp
+
+mv outlierdxy_pyrr.csv.tmp outlierdxy_pyrr_windows.csv
+
+sed -i 's/\"//g' outlierdxy_noca_windows.csv
+sed -i 's/\"//g' outlierdxy_pyrr_windows.csv
+
