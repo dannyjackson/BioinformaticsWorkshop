@@ -57,7 +57,7 @@ Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_window.r ${OUTDIR} 
 
 
 # single snps
-~/IntroBioinformaticsWorkshop/programs/angsd/misc/realSFS fst stats2 pyrr.fst.idx -win 1 -step 1 >${OUTDIR}/analyses/fst/singlesnps_pyrr
+~/IntroBioinformaticsWorkshop/programs/angsd/misc/realSFS fst stats2 ${OUTDIR}/analyses/fst/pyrr.fst.idx -win 1 -step 1 >${OUTDIR}/analyses/fst/singlesnps_pyrr
 
 # single snps
 echo -e 'region\tchr\tmidPos\tNsites\tfst' > ${OUTDIR}/analyses/fst/singlesnps_fst_pyrr.txt
