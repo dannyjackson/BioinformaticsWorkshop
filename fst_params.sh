@@ -2,6 +2,9 @@
 
 module load R/4.4.0
 module load htslib/1.19.1
+module load bedtools2/2.29.2
+
+
 WORKSHOP=~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop # folder with Danny's scripts
 PATH=$PATH:$WORKSHOP # this adds the workshop script directory to our path, so that executable scripts in it can be called without using the full path
 
