@@ -75,17 +75,9 @@ Rscript ${OUTDIR}/programs/Intro_Bioinformatics_Workshop/fst_snps.r ${OUTDIR} ${
 
 # make relevant gene lists
 
-awk 'BEGIN {FS = ","} {$1=""}1' ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > pyrr.outlierfst.csv.tmp
+awk 'BEGIN {FS = ","} {$1=""}1' ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > ${OUTDIR}/analyses/fst/pyrr.outlierfst.csv.tmp
 
-mv pyrr.windowed.outlierfst.csvv.tmp pyrr.windowed.outlierfst.csv
+mv ${OUTDIR}/analyses/fst/pyrr.windowed.outlierfst.csv.tmp ${OUTDIR}/analyses/fst/pyrr.windowed.outlierfst.csv
 
-awk 'BEGIN {FS = ","} {$1=""}1' outlierdxy_pyrr_windows.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > outlierdxy_pyrr.csv.tmp
+sed -i 's/\"//g' ${OUTDIR}/analyses/fst/pyrr.windowed.outlierfst.csv
 
-mv outlierdxy_pyrr.csv.tmp outlierdxy_pyrr_windows.csv
-
-sed -i 's/\"//g' outlierdxy_noca_windows.csv
-sed -i 's/\"//g' outlierdxy_pyrr_windows.csv
-
-
-# troubleshooting 
-awk 'BEGIN {FS = ","} {$1=""}1' pyrr.outlierfst.csv | awk 'BEGIN {OFS = ","} {$1=$1}1 ' > pyrr.outlierfst.csv.tmp
