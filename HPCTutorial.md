@@ -1,26 +1,40 @@
 # HPC Tutorial
 
-First, we are going to log into the HPC
+We will need to use an ssh client to log into the University of Arizona's High Performance Computing (HPC) using command line. If you have a mac or a Linux computer, you can just open the application "Terminal." If you have a PC, you will need to download an application that can do this. PUTTY is a commonly used one. More information on downloading and installing this can be found [here](https://hpcdocs.hpc.arizona.edu/registration_and_access/system_access/#command-line-access).
+
+At its most basic, the terminal has similar functions to Finder (on a Mac) or File Explorer (on a PC). It is a way to navigate the file structure of a computer. There are four basic navigation commands: pwd, ls, cd, and mkdir. We will work through these over the next few steps. First, type "pwd", which stands for "print working directory"
+```
+pwd
+```
+The output is the full path to your current directory, with each directory in the path separated by a "/". A directory is the scripting term for a folder in a computer or storage device. Now try out the command "ls"
+```
+ls
+```
+This command lists all files in your current directory. You can combine the output of the two to get the full path to a file in your current directory. This will be very useful in developing scripts in the future.
+
+Now let's log into the HPC using the command "ssh." This stands for "secure shell" and is a way to log into the HPC from your local computer. You must be either on the university's wifi or using a secure Virtual Private Network (VPN) to access the university's wifi remotely.
 ```
 ssh <YourNetID>@hpc.arizona.edu
 ```
-We are in what is called the "Bastion Host". This is a computer that validates your credentials and provides a gateway to the rest of the HPC environment. You do not need to think any more about this -- just know that part of your login process involves using the command "shell" to move past this checkpoint
+We are in what is called the "Bastion Host". This is a computer that validates your credentials and provides a gateway to the rest of the HPC environment. You do not need to think any more about this -- just know that part of your login process involves using the command "shell" to move past this checkpoint.
 ```
 shell
 ```
-Now that we are in the HPC, let's take a look around. Start with these two commands:
+Here is a diagram to help visualize how we are navigating the structure of the HPC. All commands are in blue, compute nodes are in red, and storage allocations are in green. Refer back to it throughout the process and at the end of today's workshop to check in on your understanding of the HPC.
+
+Let's take a look around the HPC using the two commands we've learned on our local computer. Notice where we are located in the structure of the HPC and if we have any files in our home directory:
 ```
 pwd
 ls
 ```
-The first shows the path to the directory where you are currently located. A directory is just another word for a folder in a computer. Let's make another directory that will house all of the files and scripts for this workshop. We'll use the command "mkdir" with the flag -p and the argument "IntroBioinformaticsWorkshop". A flag follows a command and always starts with a "-", and changes the behavior of the command if it is present or not. In this case, the -p flag tells the mkdir command to only make the directory "IntroBioinformaticsWorkshop" if it does not already exist. Run the following lines of code in your terminal:
+Let's make another directory that will house all of the files and scripts for this workshop. We'll use the command "mkdir" with the flag -p and the argument "IntroBioinformaticsWorkshop". A flag follows a command and always starts with a "-", and changes the behavior of the command if it is present or not. In this case, the -p flag tells the mkdir command to only make the directory "IntroBioinformaticsWorkshop" if it does not already exist. Run the following lines of code in your terminal:
 ```
 mkdir -p IntroBioinformaticsWorkshop
 ls
 cd IntroBioinformaticsWorkshop
 ls
 ```
-Following that series of commands shows how we can navigate the file structure in the HPC without needing a "GUI" (a graphical user interface). We've replicated the experience of moving through a file structure in Finder (on a Mac) or File Explorer (on a PC). By learning to perform these actions using the command line now, we will ultimately be empowered to develop much more complex scripts.
+Following that series of commands shows how we can navigate the file structure in the HPC without needing a "GUI" (a graphical user interface). We've replicated the experience of moving through a file structure in Finder or File Explorer. By learning to perform these actions using the command line now, we will ultimately be empowered to develop much more complex scripts.
 
 Now, let's create a group of 5 directories that I consider a standard set for any bioinformatic project. Within one of those directories, we will also create a subdirectory called "fst" that will house the output of today's example data analysis.
 ```
