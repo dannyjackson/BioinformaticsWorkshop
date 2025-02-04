@@ -1,23 +1,12 @@
 # FST params
 
-module load R/4.4.0
-module load htslib/1.19.1
-module load bedtools2/2.29.2
-
-
 WORKSHOP=~/IntroBioinformaticsWorkshop/programs/Intro_Bioinformatics_Workshop # folder with Danny's scripts
 PATH=$PATH:$WORKSHOP # this adds the workshop script directory to our path, so that executable scripts in it can be called without using the full path
 
 OUTDIR=~/IntroBioinformaticsWorkshop # main directory for output files
 
-# make directories for intermediate files-- will fail if these don't exist
-mkdir -p ${OUTDIR}/analyses/fst
-mkdir -p ${OUTDIR}/analyses/genelist
-mkdir -p ${OUTDIR}/datafiles/safs
-mkdir -p ${OUTDIR}/datafiles/mls/
-
 # for fst.sh
 WIN=1000 # size of window for fst scans
 STEP=1000 # size of step for fst scans
-mkdir -p ${OUTDIR}/analyses/fst/${WIN}
-mkdir -p ${OUTDIR}/analyses/genelist/${WIN}
+
+source ${WORKSHOP}/fst_setup.sh
