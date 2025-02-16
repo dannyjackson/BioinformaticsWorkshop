@@ -13,4 +13,4 @@ Order of tutorials:
 1. Data Storage and Backup Strategies [I_DataStorage.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/I_DataStorage.md)
 2. Navigating the HPC and using GitHub [II_HPCTutorial.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/II_HPCTutorial.md)
 3. Data Organization and Documentation [III_Organization.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/III_Organization.md)
-
+4. Code Management with GitHub and VSCode [IV_Coding.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/III_Organization.md)
