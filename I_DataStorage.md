@@ -23,7 +23,7 @@ When thinking about how to publish our datasets and write our metadata, we can k
 
 Metadata makes datasets accessible, interoperable, and reusable. Read through the [example metadata file](https://github/dannyjackson/Intro_Bioinformatics_Workshop/ExampleMetadataFile.md) for more information on what data can be included in a metadata file. Then, respond to the following check-in question.
 
-![xkcd data trap](https://imgs.xkcd.com/comics/data_trap_2x.png)
+![xkcd data trap](https://imgs.xkcd.com/comics/data_trap.png)
 
 *Title text: It's important to make sure your analysis destroys as much data as it produces.*
 
