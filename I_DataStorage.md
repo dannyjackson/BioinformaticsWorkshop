@@ -23,11 +23,11 @@ When thinking about how to publish our datasets and write our metadata, we can k
 
 Metadata makes datasets accessible, interoperable, and reusable. Read through the [example metadata file](https://github/dannyjackson/Intro_Bioinformatics_Workshop/ExampleMetadataFile.md) for more information on what data can be included in a metadata file. Then, respond to the following check-in question.
 
-![xkcd data trap](https://imgs.xkcd.com/comics/data_trap.png)
-
-*Title text: It's important to make sure your analysis destroys as much data as it produces.*
-
 2.	Do you have a metadata file for your dataset? Reflect on the FAIR principles and the example metadata file. Schedule a time in your week to either revise your existing metadata to meet them or write out a metadata file associated with your dataset. Store this in the directory with your dataset and include it with every backup of your data.
 
 
 Next: [II_HPCTutorial.md](https://github.com/dannyjackson/Intro_Bioinformatics_Workshop/blob/main/II_HPCTutorial.md).
+
+![xkcd data trap](https://imgs.xkcd.com/comics/data_trap.png)
+
+*Title text: It's important to make sure your analysis destroys as much data as it produces.*
