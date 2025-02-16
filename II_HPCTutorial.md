@@ -3,6 +3,7 @@
 So far, we've focused on raw data files. However, in large-scale bioinformatics work, we often develop a number of data products in the process of data filtering and analysis. Rather than publishing all of these files, we publish the code that we used to generate them from the raw data. Clear and organized coding practices are essential if we aim to produce accurate and repeatable results. In addition to improving the reproducibility of our science, organized code can also ease our own work burden, as many projects require multiple rounds of reanalysis before they reach publication.
 
 ![xkcd pipeline](https://imgs.xkcd.com/comics/data_pipeline.png)
+*Title text: "Is the pipeline literally running from your laptop?" "Don't be silly, my laptop disconnects far too often to host a service we rely on. It's running on my phone."*
 
 Before we learn to organize our code, though, we need to learn to access the High Performance Computing system where most of our analyses will be run. 
 
@@ -34,7 +35,7 @@ We are in what is called the "Bastion Host". This is a computer that validates y
 shell
 ```
 Here is a diagram to help visualize how we are navigating the structure of the HPC. All commands used to navigate between locations are in blue, compute nodes are in red, and storage allocations are in green. Refer back to it throughout the process and at the end of today's workshop to check in on your understanding of the HPC.
-![diagram of HPC structure](https://github.com/dannyjackson/Intro_Bioinformatics_Workshop/blob/main/images/HPC_Structure.png)
+![diagram of HPC structure](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/images/HPC_Structure.png)
 
 
 Let's take a look around the HPC using the two commands we've learned on our local computer. Notice where we are located in the structure of the HPC and if we have any files in our home directory:
@@ -42,4 +43,4 @@ Let's take a look around the HPC using the two commands we've learned on our loc
 pwd
 ls
 ```
-Now that we have a sense of how to navigate the HPC, we can evaluate our current data organization methods in [III_Organization.md](https://github.com/dannyjackson/Intro_Bioinformatics_Workshop/blob/main/III_Organization.md)).
+Now that we have a sense of how to navigate the HPC, we can evaluate our current data organization methods in [III_Organization.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/III_Organization.md)).
