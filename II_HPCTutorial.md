@@ -32,7 +32,8 @@ We are in what is called the "Bastion Host". This is a computer that validates y
 shell
 ```
 Here is a diagram to help visualize how we are navigating the structure of the HPC. All commands used to navigate between locations are in blue, compute nodes are in red, and storage allocations are in green. Refer back to it throughout the process and at the end of today's workshop to check in on your understanding of the HPC.
-![diagram of HPC structure](https://github.com/dannyjackson/Intro_Bioinformatics_Workshop/blob/main/HPC_Structure.png)
+![diagram of HPC structure](https://github.com/dannyjackson/Intro_Bioinformatics_Workshop/blob/main/images/HPC_Structure.png)
+
 
 Let's take a look around the HPC using the two commands we've learned on our local computer. Notice where we are located in the structure of the HPC and if we have any files in our home directory:
 ```
