@@ -6,7 +6,7 @@ Taking your time and making your code clear, accessible, and organized can often
 
 File naming conventions form the foundation for clear, effective, and organized code. They are essential for effective data management. Haphazard naming can lead to data misinterpretation or loss, and it's important to keep detailed descriptions of the naming conventions for a project that allows these files to be legible to someone else (in a metadata file, perhaps).
 
-[!xkcd documents](https://imgs.xkcd.com/comics/documents_2x.png)
+![xkcd documents](https://imgs.xkcd.com/comics/documents_2x.png)
 
 File Naming:
 1.	Have you implemented a file naming convention for the raw files of project? If so, write it out in generalized terms (e.g. projectID_sampleID.fa.gz). Is it sufficient for future researchers to understand or do you need to make a change? If not, write out a generalized naming convention that you plan to use.
