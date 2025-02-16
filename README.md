@@ -10,7 +10,7 @@ As you walk in, write out answers to the following questions:
 
 
 Order of tutorials:
-1. Data Storage and Backup Strategies (I_DataStorage.md)
-2. Navigating the HPC and using GitHub (II_HPCTutorial.md)
-3. Data Organization and Documentation (III_Organization.md)
+1. Data Storage and Backup Strategies [I_DataStorage.md](https://github.com/dannyjackson/Intro_Bioinformatics_Workshop/blob/main/I_DataStorage.md)
+2. Navigating the HPC and using GitHub [II_HPCTutorial.md](https://github.com/dannyjackson/Intro_Bioinformatics_Workshop/blob/main/II_HPCTutorial.md)
+3. Data Organization and Documentation [III_Organization.md](https://github.com/dannyjackson/Intro_Bioinformatics_Workshop/blob/main/III_Organization.md)
 
