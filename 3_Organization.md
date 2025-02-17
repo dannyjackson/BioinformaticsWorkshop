@@ -1,16 +1,13 @@
 # III. Data Organization and Documentation
 
 ## Goals of this module
-1. Recognize the Importance of Clean and Organized Code – Understand how clear coding practices enhance reproducibility, reduce errors, and streamline future reanalysis.
+1. **Recognize the Importance of Clean and Organized Code** – Understand how clear coding practices enhance reproducibility, reduce errors, and streamline future reanalysis.
 
-2. Implement Effective File Naming Conventions – Develop structured and meaningful file naming practices to improve data organization and prevent misinterpretation or loss.
+2. **Implement Effective File Naming Conventions** – Develop structured and meaningful file naming practices to improve data organization and prevent misinterpretation or loss.
 
-3. Evaluate and Improve Current Organizational Practices – Reflect on existing file and directory structures, identify areas for improvement, and implement changes for better data management.
+3. **Evaluate and Improve Current Organizational Practices** – Reflect on existing file and directory structures, identify areas for improvement, and implement changes for better data management.
 
-4. Establish a Logical Directory Structure – Create and maintain a standardized directory layout to facilitate efficient project management and collaboration.
-
-
-Prepare for Version Control and Code Management – Lay the groundwork for maintaining coding repositories by organizing scripts and data in a way that integrates seamlessly with version control tools like Git.
+4. **Establish a Logical Directory Structure** – Create and maintain a standardized directory layout to facilitate efficient project management and collaboration.
 
 Taking your time and making your code clear, accessible, and organized can often feel like a misuse of time. We're goal-oriented people, and the goal is the product, not the process... what does it matter if my code is clean as long as I find the answer to my research question? We often code in a hyper-focused state with a "get it working" mindset that leaves little space for accurate documentation. 
 

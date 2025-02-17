@@ -1,11 +1,11 @@
 # HPC Tutorial
 
 ## Goals of this module
-1. Understand Basic Command-Line Navigation – Use fundamental terminal commands (e.g., pwd, ls, cd, mkdir) to explore and manage directories efficiently.
+1. **Understand Basic Command-Line Navigation** – Use fundamental terminal commands (e.g., pwd, ls, cd, mkdir) to explore and manage directories efficiently.
 
-2. Gain Access to High-Performance Computing (HPC) Systems – Learn how to connect to the University of Arizona’s HPC using SSH and navigate its file structure.
+2. **Gain Access to High-Performance Computing (HPC) Systems** – Learn how to connect to the University of Arizona’s HPC using SSH and navigate its file structure.
 
-3. Visualize the HPC Environment – Understand the structure of the HPC system, including login procedures, different computing nodes, and storage locations.
+3. **Visualize the HPC Environment** – Understand the structure of the HPC system, including login procedures, different computing nodes, and storage locations.
 
 Many smaller analyses can be run on our local computers, and most of us have experience running code locally. As we build more complex models and work with larger datasets, migrating our workflow to remote computing systems is essential. Use of the High Performance Computing systems (or HPC) is necessary for many spatial ecology studies, genomic studies, and simulations. 
 
