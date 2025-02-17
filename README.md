@@ -18,6 +18,7 @@ As you walk in, write out answers to the following questions:
 ## Order of tutorials:
 
 1. **Data Storage and Backup Strategies**
+
    [1_DataStorage.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/1_DataStorage.md)
 
 2. **Navigating the HPC and using GitHub**
