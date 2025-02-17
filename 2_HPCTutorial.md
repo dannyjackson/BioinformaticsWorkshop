@@ -45,4 +45,4 @@ Let's take a look around the HPC using the two commands we've learned on our loc
 pwd
 ls
 ```
-Now that we have a sense of how to navigate the HPC, we can evaluate our current data organization methods in [III_Organization.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/III_Organization.md)).
+Now that we have a sense of how to navigate the HPC, we can evaluate our current data organization methods in [3_Organization.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/3_Organization.md)).
