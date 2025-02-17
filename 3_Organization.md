@@ -35,5 +35,4 @@ Let's reflect on our directory structure for our project of interest. I recommen
 
 4.	Now make a new page. On a new page in your document, write out a more organized directory structure using the same format, titled "<Ideal> <Project Name> Directory Structure". Again, you do not need to write out the files, just the directories. If your directory structure is perfect, you can skip this step, but I imagine we all discovered some areas where we could improve. 
 
-Next, we will learn the basic tools for maintaining coding repositories in [4_CodingSoftware.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/4_CodingSoftware
-.md)).
+Next, we will learn the basic tools for maintaining coding repositories in [4_CodingSoftware.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/4_CodingSoftware.md)).
