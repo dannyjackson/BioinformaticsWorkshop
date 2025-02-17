@@ -3,6 +3,7 @@
 So far, we've focused on raw data files. However, in large-scale bioinformatics work, we often develop a number of data products in the process of data filtering and analysis. Rather than publishing all of these files, we publish the code that we used to generate them from the raw data. Clear and organized coding practices are essential if we aim to produce accurate and repeatable results. In addition to improving the reproducibility of our science, organized code can also ease our own work burden, as many projects require multiple rounds of reanalysis before they reach publication.
 
 Relevant xkcd:
+
 ![xkcd pipeline](https://imgs.xkcd.com/comics/data_pipeline.png)
 *Title text: "Is the pipeline literally running from your laptop?" "Don't be silly, my laptop disconnects far too often to host a service we rely on. It's running on my phone."*
 

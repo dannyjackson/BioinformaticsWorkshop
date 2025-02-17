@@ -3,11 +3,13 @@
 Taking your time and making your code clear, accessible, and organized can often feel like a misuse of time. We're goal-oriented people, and the goal is the product, not the process... what does it matter if my code is clean as long as I find the answer to my research question? We often code in a hyper-focused state with a "get it working" mindset that leaves little space for accurate documentation. 
 
 Relevant xkcd:
+
 ![xkcd good code](https://imgs.xkcd.com/comics/good_code.png)
 
 File naming conventions form the foundation for clear, effective, and organized code. They are essential for effective data management. Haphazard naming can lead to data misinterpretation or loss, and it's important to keep detailed descriptions of the naming conventions for a project that allows these files to be legible to someone else (in a metadata file, perhaps).
 
 Relevant xkcd:
+
 ![xkcd documents](https://imgs.xkcd.com/comics/documents_2x.png)
 
 File Naming:
