@@ -30,7 +30,7 @@ Let's reflect on our directory structure for our project of interest. I recommen
 
 3.	Open a new terminal window and access the HPC. Following the format of the example below, write out the structure of your project's directories. You do not need to write out the files, just the directories. Title this "<DATE> <Project Name> Directory Structure"
 
-![diagram of directory structure](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/images/Directory_Structure.pdf)
+![diagram of directory structure](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/images/Directory_Structure.png)
 
 
 4.	Now make a new page. On a new page in your document, write out a more organized directory structure using the same format, titled "<Ideal> <Project Name> Directory Structure". Again, you do not need to write out the files, just the directories. If your directory structure is perfect, you can skip this step, but I imagine we all discovered some areas where we could improve. 
