@@ -1,5 +1,12 @@
 # HPC Tutorial
 
+## Goals of this module
+1. Understand Basic Command-Line Navigation – Use fundamental terminal commands (e.g., pwd, ls, cd, mkdir) to explore and manage directories efficiently.
+
+2. Gain Access to High-Performance Computing (HPC) Systems – Learn how to connect to the University of Arizona’s HPC using SSH and navigate its file structure.
+
+3. Visualize the HPC Environment – Understand the structure of the HPC system, including login procedures, different computing nodes, and storage locations.
+
 So far, we've focused on raw data files. However, in large-scale bioinformatics work, we often develop a number of data products in the process of data filtering and analysis. Rather than publishing all of these files, we publish the code that we used to generate them from the raw data. Clear and organized coding practices are essential if we aim to produce accurate and repeatable results. In addition to improving the reproducibility of our science, organized code can also ease our own work burden, as many projects require multiple rounds of reanalysis before they reach publication.
 
 Relevant xkcd:
