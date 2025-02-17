@@ -1,8 +1,10 @@
 # Intro_Bioinformatics_Workshop
 
-As you walk in, write out answers to the following questions:
 
 ## Walk-in Activity
+
+As you walk in, write out answers to the following questions:
+
 1.	What projects are you working on currently? Write them in a list.
 2.	For each of the above projects, describe the data type. 
 3.	For each of the above projects, write down where that data is currently stored.
