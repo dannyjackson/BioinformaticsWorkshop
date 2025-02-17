@@ -21,8 +21,6 @@ In the Data Storage and Backup Strategies module, we focused on managing our raw
 
 ![xkcd pipeline](https://imgs.xkcd.com/comics/data_pipeline.png)
 
-*Title text: "Is the pipeline literally running from your laptop?" "Don't be silly, my laptop disconnects far too often to host a service we rely on. It's running on my phone."*
-
 File naming conventions form the foundation for clear, effective, and organized code. They are essential for effective data management. Haphazard naming can lead to data misinterpretation or loss, and it's important to keep detailed descriptions of the naming conventions for a project that allows these files to be legible to someone else (in a metadata file, perhaps).
 
 Relevant xkcd:
