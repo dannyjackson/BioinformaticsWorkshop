@@ -18,10 +18,10 @@ For my genomics projects, I store the data in three places: 2 in the cloud (the 
 1.	Do your storage solutions meet the 3-2-1 rule? 
 
  - If not, write down which projects require additional backups, where you plan to back them up to, and schedule it in your calendar for some time within the next week. 
- 
+
  *Note: Downloads of big data to external hard drives can take many hours, so prepare to either run it overnight or during an extended period where your computer can sit plugged in and connected to the SSD. If you require an SSD for your project, talk to your PI and make a plan.*
 
-*Note: these [tutorials](https://hpcdocs.hpc.arizona.edu/storage_and_transfers/transfers/overview/) for how to transfer data from the HPC to another storage device may be useful!*
+   *Note: these [tutorials](https://hpcdocs.hpc.arizona.edu/storage_and_transfers/transfers/overview/) for how to transfer data from the HPC to another storage device may be useful!*
 
 ## Metadata
 Metadata files are a major component of every dataset, but they are often overlooked until we prepare our datasets for publication. Unpublished data quickly becomes unusable by others if the owner of that data never develops a metadata file, or even by the owner themself if they intend to return to the project in the future. Metadata files should be developed early and stored with our data alongside each backup.
