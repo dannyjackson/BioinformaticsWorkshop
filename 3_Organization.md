@@ -10,7 +10,7 @@ File naming conventions form the foundation for clear, effective, and organized 
 
 Relevant xkcd:
 
-![xkcd documents](https://imgs.xkcd.com/comics/documents_2x.png)
+![xkcd documents](https://imgs.xkcd.com/comics/documents.png)
 
 File Naming:
 1.	Have you implemented a file naming convention for the raw files of project? If so, write it out in generalized terms (e.g. projectID_sampleID.fa.gz). Is it sufficient for future researchers to understand or do you need to make a change? If not, write out a generalized naming convention that you plan to use.
