@@ -21,7 +21,7 @@ In the Data Storage and Backup Strategies module, we focused on managing our raw
 
 ![xkcd pipeline](https://imgs.xkcd.com/comics/data_pipeline.png)
 
-File naming conventions form the foundation for clear, effective, and organized code. They are essential for effective data management. Haphazard naming can lead to data misinterpretation or loss, and it's important to keep detailed descriptions of the naming conventions for a project that allows these files to be legible to someone else (in a metadata file, perhaps).
+File naming conventions form the foundation for clear, effective, and organized code. They are essential for effective data management. Haphazard naming can lead to data misinterpretation or loss, and it's important to keep detailed descriptions of the naming conventions for a project that allows these files to be legible to someone else (in a metadata file, perhaps). File names should always follow a structured, generalizable format and should not include white spaces or special characters aside from underscores. These characters disrupt many coding processes, as they often have distinct meanings in various coding languages.
 
 Relevant xkcd:
 
