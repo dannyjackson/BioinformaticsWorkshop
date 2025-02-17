@@ -42,6 +42,8 @@ Metadata makes datasets accessible, interoperable, and reusable. Read through th
 
 Next: [2_HPCTutorial.md](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/2_HPCTutorial.md).
 
+
+
 **Relevant xkcd:**
 
 ![xkcd data trap](https://imgs.xkcd.com/comics/data_trap.png)
