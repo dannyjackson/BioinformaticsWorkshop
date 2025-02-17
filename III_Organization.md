@@ -14,5 +14,5 @@ File Naming:
 
 
 Directory Structure:
-2.	Open a new terminal window and access the HPC. On the page titled, “Current directory structure”, write out your directory structure using the example format. You do not need to write out the files, just the directories.
-3.	If you are happy with your directory structure, skip this step. If you are not, go to the page titled, “Proper directory structure” and write out a more organized directory structure using the example format. You do not need to write out the files, just the directories.
+3.	Open a new terminal window and access the HPC. On the page titled, “Current directory structure”, write out your directory structure using the example format. You do not need to write out the files, just the directories.
+4.	If you are happy with your directory structure, skip this step. If you are not, go to the page titled, “Proper directory structure” and write out a more organized directory structure using the example format. You do not need to write out the files, just the directories.
