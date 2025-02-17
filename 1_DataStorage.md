@@ -16,7 +16,9 @@ For all data generated in our lab, we need to maintain:
 For my genomics projects, I store the data in three places: 2 in the cloud (the HPC and the Sequence Read Archive) and 1 local location (an SSD external hard drive). Work through the following question to evaluate the backup status of your own datafiles.
 
 1.	Do your storage solutions meet the 3-2-1 rule? 
+
  - If not, write down which projects require additional backups, where you plan to back them up to, and schedule it in your calendar for some time within the next week. 
+ 
  *Note: Downloads of big data to external hard drives can take many hours, so prepare to either run it overnight or during an extended period where your computer can sit plugged in and connected to the SSD. If you require an SSD for your project, talk to your PI and make a plan.*
 
 *Note: these [tutorials](https://hpcdocs.hpc.arizona.edu/storage_and_transfers/transfers/overview/) for how to transfer data from the HPC to another storage device may be useful!*
