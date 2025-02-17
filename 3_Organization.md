@@ -11,13 +11,13 @@
 
 Taking your time and making your code clear, accessible, and organized can often feel like a misuse of time. We're goal-oriented people, and the goal is the product, not the process... what does it matter if my code is clean as long as I find the answer to my research question? We often code in a hyper-focused state with a "get it working" mindset that leaves little space for accurate documentation. 
 
-Relevant xkcd:
+**Relevant xkcd:**
 
 ![xkcd good code](https://imgs.xkcd.com/comics/good_code.png)
 
 In the Data Storage and Backup Strategies module, we focused on managing our raw data files. However, in large-scale bioinformatics work, we often develop a number of data products in the process of data filtering and analysis. Rather than publishing all of these files, we publish the code that we used to generate them from the raw data. Clear and organized coding practices are essential if we aim to produce accurate and repeatable results. In addition to improving the reproducibility of our science, organized code can also ease our own work burden, as many projects require multiple rounds of reanalysis before they reach publication.
 
-Relevant xkcd:
+**Relevant xkcd:**
 
 ![xkcd pipeline](https://imgs.xkcd.com/comics/data_pipeline.png)
 
