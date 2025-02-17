@@ -42,7 +42,7 @@ ls ../../../
 ```
 Understanding file structures will be very useful in developing scripts in the future.
 
-Now let's log into the HPC using the command "ssh." This stands for "secure shell" and is a way to log into the HPC from your local computer. You must be either on the university's wifi or using a secure Virtual Private Network (VPN) to access the university's wifi remotely. Use the following command followed by your password to log in. Note the use of angle brackets: <>, which commonly indicate a placeholder value. These indicate that the text within them should be edited by the user. In this case, replace it with your UA Net ID. For example, mine is dannyjackson@hpc.arizona.edu.
+Now let's log into the HPC using the command "ssh." This stands for "secure shell" and is a way to log into the HPC from your local computer. You must be either on the university's wifi or using a secure [Virtual Private Network (VPN)](https://it.arizona.edu/remote-work) to access the university's wifi remotely. Use the following command followed by your password to log in. Note the use of angle brackets: <>, which commonly indicate a placeholder value. These indicate that the text within them should be edited by the user. In this case, replace it with your UA Net ID. For example, mine is dannyjackson@hpc.arizona.edu.
 ```
 ssh <YourNetID>@hpc.arizona.edu
 ```
