@@ -6,6 +6,14 @@ Relevant xkcd:
 
 ![xkcd good code](https://imgs.xkcd.com/comics/good_code.png)
 
+In the Data Storage and Backup Strategies module, we focused on managing our raw data files. However, in large-scale bioinformatics work, we often develop a number of data products in the process of data filtering and analysis. Rather than publishing all of these files, we publish the code that we used to generate them from the raw data. Clear and organized coding practices are essential if we aim to produce accurate and repeatable results. In addition to improving the reproducibility of our science, organized code can also ease our own work burden, as many projects require multiple rounds of reanalysis before they reach publication.
+
+Relevant xkcd:
+
+![xkcd pipeline](https://imgs.xkcd.com/comics/data_pipeline.png)
+
+*Title text: "Is the pipeline literally running from your laptop?" "Don't be silly, my laptop disconnects far too often to host a service we rely on. It's running on my phone."*
+
 File naming conventions form the foundation for clear, effective, and organized code. They are essential for effective data management. Haphazard naming can lead to data misinterpretation or loss, and it's important to keep detailed descriptions of the naming conventions for a project that allows these files to be legible to someone else (in a metadata file, perhaps).
 
 Relevant xkcd:

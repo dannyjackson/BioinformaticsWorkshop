@@ -7,16 +7,11 @@
 
 3. Visualize the HPC Environment – Understand the structure of the HPC system, including login procedures, different computing nodes, and storage locations.
 
-So far, we've focused on raw data files. However, in large-scale bioinformatics work, we often develop a number of data products in the process of data filtering and analysis. Rather than publishing all of these files, we publish the code that we used to generate them from the raw data. Clear and organized coding practices are essential if we aim to produce accurate and repeatable results. In addition to improving the reproducibility of our science, organized code can also ease our own work burden, as many projects require multiple rounds of reanalysis before they reach publication.
+Many smaller analyses can be run on our local computers, and most of us have experience running code locally. As we build more complex models and work with larger datasets, migrating our workflow to remote computing systems is essential. Use of the High Performance Computing systems (or HPC) is necessary for many spatial ecology studies, genomic studies, and simulations. 
 
-Relevant xkcd:
+The University of Arizona's HPC offers two access options: the Graphical User Interface (GUI) Open OnDemand, and the command line. While the GUI may feel more intuitive at first, learning to access the HPC through the command line will strengthen your scripting skills and enhance your workflow efficiency.
 
-![xkcd pipeline](https://imgs.xkcd.com/comics/data_pipeline.png)
-*Title text: "Is the pipeline literally running from your laptop?" "Don't be silly, my laptop disconnects far too often to host a service we rely on. It's running on my phone."*
-
-Before we learn to organize our code, though, we need to learn to access the High Performance Computing system where most of our analyses will be run. 
-
-To access the University of Arizona's High Performance Computing (HPC) using command line, we need use an ssh client. If you have a mac or a Linux computer, you can just open the application "Terminal." If you have a PC, you will need to download an application that can do this. PUTTY is a commonly used one. Hopefully everyone has an ssh client already installed on their computer, but if not, more information on downloading and installing this can be found [here](https://hpcdocs.hpc.arizona.edu/registration_and_access/system_access/#command-line-access).
+To access the University of Arizona's HPC using command line, we need use an ssh client. If you have a mac or a Linux computer, you can just open the application "Terminal." If you have a PC, you will need to download an application that can do this. PUTTY is a commonly used one. Hopefully everyone has an ssh client already installed on their computer, but if not, more information on downloading and installing this can be found [here](https://hpcdocs.hpc.arizona.edu/registration_and_access/system_access/#command-line-access).
 
 At its most basic, the terminal has similar functions to Finder (on a Mac) or File Explorer (on a PC). It is a way to navigate the file structure of a computer. There are four basic navigation commands: pwd, ls, cd, and mkdir. We will work through these over the next few steps. First, type "pwd", which stands for "print working directory"
 ```
