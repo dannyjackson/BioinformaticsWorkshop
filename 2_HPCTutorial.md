@@ -9,6 +9,9 @@
 
 Many smaller analyses can be run on our local computers, and most of us have experience running code locally. As we build more complex models and work with larger datasets, migrating our workflow to remote computing systems is essential. Use of the High Performance Computing systems (or HPC) is necessary for many spatial ecology studies, genomic studies, and simulations. 
 
+*Relevant xkcd:*
+![Tamagotchi hive](https://imgs.xkcd.com/comics/tamagotchi_hive.png)
+
 The University of Arizona's HPC offers two access options: the Graphical User Interface (GUI) Open OnDemand, and the command line. While the GUI may feel more intuitive at first, learning to access the HPC through the command line will strengthen your scripting skills and enhance your workflow efficiency.
 
 To access the University of Arizona's HPC using command line, we need use an ssh client. If you have a mac or a Linux computer, you can just open the application "Terminal." If you have a PC, you will need to download an application that can do this. PUTTY is a commonly used one. Hopefully everyone has an ssh client already installed on their computer, but if not, more information on downloading and installing this can be found [here](https://hpcdocs.hpc.arizona.edu/registration_and_access/system_access/#command-line-access).
