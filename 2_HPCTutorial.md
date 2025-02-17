@@ -9,7 +9,8 @@
 
 Many smaller analyses can be run on our local computers, and most of us have experience running code locally. As we build more complex models and work with larger datasets, migrating our workflow to remote computing systems is essential. Use of the High Performance Computing systems (or HPC) is necessary for many spatial ecology studies, genomic studies, and simulations. 
 
-*Relevant xkcd:*
+**Relevant xkcd:**
+
 ![Tamagotchi hive](https://imgs.xkcd.com/comics/tamagotchi_hive.png)
 
 The University of Arizona's HPC offers two access options: the Graphical User Interface (GUI) Open OnDemand, and the command line. While the GUI may feel more intuitive at first, learning to access the HPC through the command line will strengthen your scripting skills and enhance your workflow efficiency.
