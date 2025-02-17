@@ -1,4 +1,4 @@
-# Intro_Bioinformatics_Workshop
+# Bioinformatics Workshop
 
 
 ## Walk-in Activity
