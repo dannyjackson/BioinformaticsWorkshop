@@ -1,5 +1,4 @@
 # Intro_Bioinformatics_Workshop
- Scripts for introductory bioinformatics workshop
 
 As you walk in, write out answers to the following questions:
 

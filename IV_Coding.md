@@ -29,6 +29,6 @@ Now let's work through the process of running a script. We won't be writing or r
 To access these scripts, move into the "programs" directory and copy the script and datafiles from my github using the commands below:
 ```
 cd programs
-git clone https://github.com/dannyjackson/BioinformaticsWorkshop/example_scripts
+git clone https://github.com/dannyjackson/BioinformaticsWorkshop/ExampleScripts
 ```
 Let's explore these scripts and datafiles to see what we've copied over. First, see what new files exist in our directory:
