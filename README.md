@@ -1,5 +1,10 @@
 # Bioinformatics Workshop
 
+## Workshop Overview
+
+This workshop is designed to introduce graduate and undergraduate biology students to data management for bioinformatics. It is applicable across disciplines within biology and universities, but is currently designed with the McNew and Petrullo labs at the University of Arizona in mind. As such, some information is specific to the computing resources at the University of Arizona.
+
+_Last taught: February 2025_
 
 ## Walk-in Activity
 
