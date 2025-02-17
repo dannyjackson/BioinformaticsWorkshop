@@ -13,7 +13,20 @@ File Naming:
 2.  Do you use file naming conventions for your downstream files? Look through some of the files that you've generated in the course of one of your projects. Are the file names meaningful? Can you readily reproduce these files from the raw files with your existing code? Can someone else?
 
 
-Directory Structure:
+**Directory Structure:**
+In addition to file naming, keeping an organized system of directories for each project is also essential for data management. I create a new directory for each project that contains the following directories:
+   - analyses
+   - datafiles
+   - referencelists
+   - scripts  
 
-3.	Open a new terminal window and access the HPC. On the page titled, “Current directory structure”, write out your directory structure using the example format. You do not need to write out the files, just the directories.
-4.	If you are happy with your directory structure, skip this step. If you are not, go to the page titled, “Proper directory structure” and write out a more organized directory structure using the example format. You do not need to write out the files, just the directories.
+I create new subdirectories within "analyses" to hold data products from that specific analysis. I store raw and modified datafiles in the directory "datafiles." I use "referencelists" as a place to store lists that are relevant across multiple analyses, for instance a list of chromosome names in a genome, or a list of sample names and their locations. Finally, I may use "scripts" to store in-progress scripts for an analysis that I'm working on that I have not fully integrated into my GitHub. Other folks may clone their GitHub repositories directly into the "scripts" subdirectory for each project, but I prefer to keep all of my code across projects in the same directory (~/programs/).
+
+Let's reflect on our directory structure for our project of interest. I recommend performing the next activity on the HPC if you have an ongoing project, but you can also focus on a local project. Either way, please use the terminal to navigate your files!
+
+3.	Open a new terminal window and access the HPC. Following the format of the example below, write out the structure of your project's directories. You do not need to write out the files, just the directories. Title this "<DATE> <Project Name> Directory Structure"
+
+![diagram of directory structure](https://github.com/dannyjackson/BioinformaticsWorkshop/blob/main/images/Directory_Structure.pdf)
+
+
+4.	Now make a new page. On a new page in your document, write out a more organized directory structure using the same format, titled "<Ideal> <Project Name> Directory Structure". Again, you do not need to write out the files, just the directories. If your directory structure is perfect, you can skip this step, but I imagine we all discovered some areas where we could improve. 
