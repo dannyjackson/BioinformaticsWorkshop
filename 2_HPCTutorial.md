@@ -30,6 +30,16 @@ This command lists all files in your current directory. You can combine the outp
 ls subdir/
 ls /path/to/current/directory/subdir/
 ```
+I think of looking into the subdirectories of our current location as looking "below" us. We can also look above us using an absolute path, for instance, this command looks at one directory "above" the hypothetical current directory:
+```
+ls /path/to/current/
+```
+We can use relative instead of absolute paths to simplify this. Two periods in a row signifies one directory above your current location. Try out the following commands and see what they output:
+```
+ls ../
+ls ../../
+ls ../../../
+```
 Understanding file structures will be very useful in developing scripts in the future.
 
 Now let's log into the HPC using the command "ssh." This stands for "secure shell" and is a way to log into the HPC from your local computer. You must be either on the university's wifi or using a secure Virtual Private Network (VPN) to access the university's wifi remotely. Use the following command followed by your password to log in. Note the use of angle brackets: <>, which commonly indicate a placeholder value. These indicate that the text within them should be edited by the user. In this case, replace it with your UA Net ID. For example, mine is dannyjackson@hpc.arizona.edu.
