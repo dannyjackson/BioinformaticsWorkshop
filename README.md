@@ -8,7 +8,7 @@ _Last taught: February 2025_
 
 ## Walk-in Activity
 
-As you walk in, write out answers to the following questions:
+As you walk in, open a digital note taking app (Word or VSCode or Notes etc.) and write out answers to the following questions:
 
 1.	What projects are you working on currently? Write them in a list.
 2.	For each of the above projects, describe the data type. 
